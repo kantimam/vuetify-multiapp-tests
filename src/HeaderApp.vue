@@ -1,11 +1,8 @@
 <template>
   <v-app>
-    <v-main>
-      <div style="height: 10px">
-        VUE APP 2 Spacer
-      </div>
-      <HelloWorld />
-    </v-main>
+
+    <HelloWorld />
+
   </v-app>
 </template>
 
@@ -13,7 +10,7 @@
 import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: 'App',
+  name: 'HeaderApp',
 
   components: {
     HelloWorld,

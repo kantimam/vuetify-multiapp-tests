@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body {
+        max-width: 1200px;
+        padding: 80px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
-    <div id="app"></div>
+    <div id="v-app1-wrapper">
+      <h1>some static content</h1>
+      <img
+        src="https://images.pexels.com/photos/13761592/pexels-photo-13761592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        width="400"
+      />
+      <h2>first vue app content</h2>
+      <div id="v-head"></div>
+    </div>
+    <div id="v-app2-wrapper">
+      <h1>static content of the main page</h1>
+      <h2>second vue app</h2>
+      <div id="app"></div>
+      <h2>some content after the second vue app</h2>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
