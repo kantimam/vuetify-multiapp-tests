@@ -5,6 +5,9 @@
         VUE APP 2 Spacer
       </div>
       <HelloWorld />
+      <div>
+        <v-range-slider hint="Im a hint" max="50" min="-50"></v-range-slider>
+      </div>
     </v-main>
   </v-app>
 </template>
